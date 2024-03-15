@@ -1,4 +1,4 @@
-# Desafio 02 - JavaScript  😛
+# Desafio 02 - JavaScript  🚀
 
 Nesse desafio você irá criar uma lista de **estudantes** e, cada estudante dentro dessa lista, deverá conter os seguintes dados:
 
