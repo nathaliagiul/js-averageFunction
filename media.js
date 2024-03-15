@@ -48,11 +48,11 @@ const media = (undOne, undTwo) => (undOne + undTwo)/2;
 
 for(let student of students){
     const mediaStudent = media(student.undOne, student.undTwo);
-    if(mediaStudent >= 7){
-        alert(`A média do(a) aluno(a) ${student.name} é: ${mediaStudent}\n
-        Parabéns, ${student.name}! Você foi aprovado(a) no concurso!`);
-    } else {
-        alert(`A média do(a) aluno(a) ${student.name} é: ${mediaStudent}\n
-        Não foi dessa vez, ${student.name}! Tente novamente!`)
-    }
+
+    const msgSucess = `A média do(a) aluno(a) ${student.name} é: ${mediaStudent}\n
+    Parabéns, ${student.name}! Você foi aprovado(a) no concurso!`;
+    const msgTryAgain =  `A média do(a) aluno(a) ${student.name} é: ${mediaStudent}\n
+    Não foi dessa vez, ${student.name}! Tente novamente!`;
+
+    mediaStudent >= 7 ? alert(msgSucess) : alert(msgTryAgain);
 }
